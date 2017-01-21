@@ -48,8 +48,11 @@ public class GuiMain {
         JButton timestampButton = new JButton("Timestamp");
         timestampButton.addActionListener(new TimestampButtonListener());
 
-        JButton newEntryButton = new JButton("New Note");
+        JButton newEntryButton = new JButton("New Entry");
         newEntryButton.addActionListener(new NewEntryButtonListener());
+
+        JButton loadEntryButton = new JButton("Archives");
+        loadEntryButton.addActionListener(new LoadEntryButtonListener());
 
 
         toolbar.add(saveButton);
@@ -91,10 +94,15 @@ public class GuiMain {
                     null,
                     null
             );
-            if (entryName != "") {
+            if (entryName.length() > 0) {
                 EntryPanel ep = new EntryPanel(entryName);
                 tabbedPane.addTab(entryName, ep.getMainPanel());
             }
+        }
+    }
+
+    private class LoadEntryButtonListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
 
         }
     }

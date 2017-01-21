@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a888ce77-feaa-4298-8c9a-f91060de0e2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$SaveButtonListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$TimestampButtonListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/MainLogPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/RecentsPanel$LoadButtonListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/RecentsPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/org/DerekCo/CaptainsLog/EntryTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/RecentsPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/util/HibernateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/DerekCo/CaptainsLog/util/HibernateUtilTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/App.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/Entry.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/EntryPanel.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/EntryPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$1.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$ExitListener.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain$ExitListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/GuiMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/Log.class" afterPath="$PROJECT_DIR$/target/classes/org/DerekCo/CaptainsLog/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/DerekCo/CaptainsLog/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/DerekCo/CaptainsLog/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CaptainsLog.iml" afterPath="$PROJECT_DIR$/CaptainsLog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/App.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Entry.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/EntryPanel.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/EntryPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Log.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java" afterPath="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java" />
     </list>
     <ignored path="CaptainsLog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,13 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GuiMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GuiMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="98">
+              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
               <folding>
-                <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
+                <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,7 +39,7 @@
       <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
+            <state relative-caret-position="-145">
               <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,18 +47,6 @@
                 <element signature="e#465#466#0" expanded="true" />
                 <element signature="e#1116#1117#0" expanded="true" />
                 <element signature="e#1143#1144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainLogPanel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,10 +94,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/DerekCo/CaptainsLog/util/HibernateUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/RecentsPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/EntryPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java" />
       </list>
     </option>
   </component>
@@ -196,20 +159,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CaptainsLog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaptainsLog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaptainsLog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,7 +331,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrainTrust" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -688,7 +637,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.502907" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4099099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1891892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.49709302" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -748,7 +697,7 @@
         <state relative-caret-position="165">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,7 +741,7 @@
         <state relative-caret-position="300">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
+            <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
           </folding>
         </state>
       </provider>
@@ -816,7 +765,7 @@
         <state relative-caret-position="165">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -860,7 +809,7 @@
         <state relative-caret-position="270">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
-            <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
+            <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
           </folding>
         </state>
       </provider>
@@ -884,7 +833,7 @@
         <state relative-caret-position="165">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -928,7 +877,7 @@
         <state relative-caret-position="270">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
-            <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
+            <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
           </folding>
         </state>
       </provider>
@@ -952,7 +901,7 @@
         <state relative-caret-position="165">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,7 +945,7 @@
         <state relative-caret-position="270">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
-            <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
+            <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1020,7 +969,7 @@
         <state relative-caret-position="165">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1108,11 +1057,11 @@
         <state relative-caret-position="315">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#733#734#0" expanded="false" />
+            <element signature="e#770#771#0" expanded="false" />
+            <element signature="e#807#808#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,16 +1071,8 @@
         <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +1097,7 @@
         <state relative-caret-position="267">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1169,9 +1110,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/EntryPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
+        <state relative-caret-position="-145">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1185,28 +1152,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/GuiMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="98">
+          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
           <folding>
-            <marker date="1484970624000" expanded="true" signature="816:850" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/EntryPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/DerekCo/CaptainsLog/MainLogPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1484979764000" expanded="true" signature="816:850" ph="..." />
           </folding>
         </state>
       </provider>
