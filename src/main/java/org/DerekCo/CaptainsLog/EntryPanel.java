@@ -2,6 +2,7 @@ package org.DerekCo.CaptainsLog;
 
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -17,7 +18,7 @@ public class EntryPanel {
     public EntryPanel() {
         mainPanel = new JPanel();
 //                              (rows, columns)
-        textArea = new JTextArea(20, 35);
+        textArea = new JTextArea(18, 35);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         // set the text area to auto-scroll down when appended to:
@@ -38,6 +39,11 @@ public class EntryPanel {
     public EntryPanel(String arg) {
         this();
         setEntry(new Entry(arg));
+    }
+
+    public EntryPanel(File archive){
+        this();
+        setEntry(new Entry(archive));
     }
 
 
@@ -68,5 +74,9 @@ public class EntryPanel {
         textArea.append("\n" + timestamp);
         int caretPosish = textArea.getDocument().getLength();
         textArea.setCaretPosition(caretPosish);
+    }
+
+    String getTitle() {
+        return entry.title;
     }
 }

@@ -1,11 +1,15 @@
 package org.DerekCo.CaptainsLog;
 
 import javafx.scene.paint.*;
+import javafx.stage.*;
+import javafx.stage.Window;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
+import java.awt.event.WindowEvent;
+import java.io.File;
 
 /**
  * Created by Mastermind on 12/24/16.
@@ -58,8 +62,15 @@ public class GuiMain {
         toolbar.add(saveButton);
         toolbar.add(timestampButton);
         toolbar.add(newEntryButton);
+        toolbar.add(loadEntryButton);
 
         frame.getContentPane().add(toolbar, BorderLayout.NORTH);
+    }
+
+    void addTab(EntryPanel entryPanel) {
+        tabbedPane.addTab(entryPanel.getTitle(), entryPanel.getMainPanel());
+        int index = tabbedPane.indexOfTab(entryPanel.getTitle());
+
     }
 
     private class ExitListener extends WindowAdapter {
@@ -67,6 +78,15 @@ public class GuiMain {
             frame.setVisible(false);
             mainLogPanel.save("LOGS");
             System.exit(0);
+        }
+    }
+
+    private class tabCloseButtonListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            Component selected = tabbedPane.getSelectedComponent();
+            if (selected != null) {
+                tabbedPane.remove(selected);
+            }
         }
     }
 
@@ -103,7 +123,17 @@ public class GuiMain {
 
     private class LoadEntryButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
+            File currentDir = new File(System.getProperty("user.home") + File.separator + ".captainsLog");
+            final JFileChooser chooser = new JFileChooser(currentDir);
+            int returnVal = chooser.showOpenDialog(frame);
 
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File archive = chooser.getSelectedFile();
+
+                EntryPanel ep = new EntryPanel(archive);
+                //tabbedPane.addTab(archive.getName(), ep.getMainPanel());
+                addTab(ep);
+            }
         }
     }
 }
