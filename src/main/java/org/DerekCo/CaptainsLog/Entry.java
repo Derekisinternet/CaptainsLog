@@ -2,6 +2,7 @@ package org.DerekCo.CaptainsLog;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -36,6 +37,7 @@ public class Entry {
             String line = null;
             while ((line = reader.readLine()) != null) {
                 content += line;
+                content += "\n";
             }
         } catch (IOException x) {
             System.err.format("IOException: %s%n", x);
@@ -50,10 +52,25 @@ public class Entry {
         content = string;
     }
 
-    void setTitle(String arg) {
-        title = arg;
-    }
 
-    void save() {}
+    void save(String directory) {
+        String content = this.getContent();
+        content += "\n";
+        File saveDir = new File(System.getProperty("user.home") + File.separator + ".captainsLog"
+                + File.separator + directory);
+        if (!saveDir.exists()) {
+            saveDir.mkdir();
+        }
+
+        File filename = new File(saveDir.getAbsolutePath() + File.separator + this.title);
+
+        try {
+            FileWriter writer = new FileWriter(filename, false);
+            writer.write(content);
+            writer.close();
+        } catch(IOException except) {
+            except.printStackTrace();
+        }
+    }
 
 }

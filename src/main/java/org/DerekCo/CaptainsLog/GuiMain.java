@@ -65,14 +65,14 @@ public class GuiMain {
     private class ExitListener extends WindowAdapter {
         public void windowClosing(WindowEvent event) {
             frame.setVisible(false);
-            mainLogPanel.save();
+            mainLogPanel.save("LOGS");
             System.exit(0);
         }
     }
 
     private class SaveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            mainLogPanel.save();
+            mainLogPanel.save("LOGS");
         }
     }
 

@@ -56,9 +56,9 @@ public class EntryPanel {
         return textArea.getText();
     }
 
-    void save() {
+    void save(String saveDir) {
         entry.setContent(textArea.getText());
-        entry.save();
+        entry.save(saveDir);
     }
 
     void timestamp(){
