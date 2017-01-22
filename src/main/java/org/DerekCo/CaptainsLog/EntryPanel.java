@@ -18,7 +18,7 @@ public class EntryPanel {
     public EntryPanel() {
         mainPanel = new JPanel();
 //                              (rows, columns)
-        textArea = new JTextArea(18, 35);
+        textArea = new JTextArea(17, 35);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         // set the text area to auto-scroll down when appended to:
