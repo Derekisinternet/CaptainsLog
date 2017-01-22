@@ -33,6 +33,7 @@ public class GuiMain {
         initToolbar();
 
         tabbedPane = new JTabbedPane();
+        tabbedPane.setTabLayoutPolicy(JTabbedPane.WRAP_TAB_LAYOUT);
         frame.getContentPane().add(tabbedPane, BorderLayout.CENTER);
 
         mainLogPanel = new MainLogPanel();
@@ -70,7 +71,7 @@ public class GuiMain {
     void addTab(EntryPanel entryPanel) {
         tabbedPane.addTab(entryPanel.getTitle(), entryPanel.getMainPanel());
         int index = tabbedPane.indexOfTab(entryPanel.getTitle());
-
+        tabbedPane.setTabComponentAt(index, new ButtonTabComponent(tabbedPane));
     }
 
     private class ExitListener extends WindowAdapter {
