@@ -99,6 +99,7 @@ public class GuiMain {
 
     private class TimestampButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
+            tabbedPane.getSelectedComponent();
             mainLogPanel.timestamp();
         }
     }
@@ -132,7 +133,6 @@ public class GuiMain {
                 File archive = chooser.getSelectedFile();
 
                 EntryPanel ep = new EntryPanel(archive);
-                //tabbedPane.addTab(archive.getName(), ep.getMainPanel());
                 addTab(ep);
             }
         }

@@ -2,6 +2,9 @@ package org.DerekCo.CaptainsLog;
 
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
+import java.awt.event.ActionEvent;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,6 +17,7 @@ public class EntryPanel {
     JTextArea textArea;
     JScrollPane scroller;
     Entry entry;
+    InputMap inputMap;
 
     public EntryPanel() {
         mainPanel = new JPanel();
@@ -29,6 +33,10 @@ public class EntryPanel {
         mainPanel.add(scroller);
 
         entry = new Entry();
+
+        inputMap = mainPanel.getInputMap();
+        setActions();
+        setKeyBindings();
     }
 
     public EntryPanel(Entry arg) {
@@ -68,7 +76,7 @@ public class EntryPanel {
     }
 
     void timestamp(){
-        String timestamp = new SimpleDateFormat("HH.mm.ss").format(new Date());
+        String timestamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
         timestamp += "-- ";
 
         textArea.append("\n" + timestamp);
@@ -78,5 +86,17 @@ public class EntryPanel {
 
     String getTitle() {
         return entry.title;
+    }
+
+    void setActions() {
+        mainPanel.getActionMap().put("timestamp", new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                timestamp();
+            }
+        });
+    }
+
+    void setKeyBindings() {
+        inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_MASK), "timestamp");
     }
 }
