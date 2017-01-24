@@ -37,7 +37,7 @@ public class GuiMain {
         frame.getContentPane().add(tabbedPane, BorderLayout.CENTER);
 
         mainLogPanel = new MainLogPanel();
-        tabbedPane.addTab("Today", mainLogPanel.getMainPanel());
+        tabbedPane.addTab("Today", mainLogPanel);
 
         //not sure how this works; I cribbed it from the tutorial. I'll come back to it.
         tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
@@ -69,7 +69,7 @@ public class GuiMain {
     }
 
     void addTab(EntryPanel entryPanel) {
-        tabbedPane.addTab(entryPanel.getTitle(), entryPanel.getMainPanel());
+        tabbedPane.addTab(entryPanel.getTitle(), entryPanel);
         int index = tabbedPane.indexOfTab(entryPanel.getTitle());
         tabbedPane.setTabComponentAt(index, new ButtonTabComponent(tabbedPane));
     }
@@ -118,7 +118,7 @@ public class GuiMain {
             );
             if (entryName.length() > 0) {
                 EntryPanel ep = new EntryPanel(entryName);
-                tabbedPane.addTab(entryName, ep.getMainPanel());
+                tabbedPane.addTab(entryName, ep);
             }
         }
     }

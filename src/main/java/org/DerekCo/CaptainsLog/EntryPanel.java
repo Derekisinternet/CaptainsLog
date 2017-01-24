@@ -12,15 +12,13 @@ import java.util.Date;
 /**
  * Created by Mastermind on 12/24/16.
  */
-public class EntryPanel {
-    private JPanel mainPanel;
+public class EntryPanel extends JPanel {
     JTextArea textArea;
     JScrollPane scroller;
     Entry entry;
     InputMap inputMap;
 
     public EntryPanel() {
-        mainPanel = new JPanel();
 //                              (rows, columns)
         textArea = new JTextArea(17, 35);
         textArea.setLineWrap(true);
@@ -30,11 +28,11 @@ public class EntryPanel {
         caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
         scroller = new JScrollPane(textArea);
 
-        mainPanel.add(scroller);
+        this.add(scroller);
 
         entry = new Entry();
 
-        inputMap = mainPanel.getInputMap();
+        inputMap = this.getInputMap();
         setActions();
         setKeyBindings();
     }
@@ -64,7 +62,6 @@ public class EntryPanel {
         return this.entry;
     }
 
-    public JPanel getMainPanel(){ return mainPanel;}
 
     public String getContents() {
         return textArea.getText();
@@ -89,7 +86,7 @@ public class EntryPanel {
     }
 
     void setActions() {
-        mainPanel.getActionMap().put("timestamp", new AbstractAction() {
+        this.getActionMap().put("timestamp", new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
                 timestamp();
             }
