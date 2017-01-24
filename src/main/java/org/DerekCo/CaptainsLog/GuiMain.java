@@ -99,8 +99,8 @@ public class GuiMain {
 
     private class TimestampButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            tabbedPane.getSelectedComponent();
-            mainLogPanel.timestamp();
+            EntryPanel selected = (EntryPanel) tabbedPane.getSelectedComponent();
+            selected.timestamp();
         }
     }
 
@@ -118,7 +118,7 @@ public class GuiMain {
             );
             if (entryName.length() > 0) {
                 EntryPanel ep = new EntryPanel(entryName);
-                tabbedPane.addTab(entryName, ep);
+                addTab(ep);
             }
         }
     }
