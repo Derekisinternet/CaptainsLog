@@ -32,7 +32,7 @@ public class EntryPanel extends JPanel {
 
         entry = new Entry();
 
-        inputMap = this.getInputMap();
+        inputMap = this.getInputMap(JComponent.WHEN_FOCUSED);
         setActions();
         setKeyBindings();
     }
