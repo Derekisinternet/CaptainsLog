@@ -14,21 +14,23 @@ import javax.persistence.*;
 public class Entry {
     String title = "";
     private String content = "";
-    String savePath = "ENTRIES";
+    String savePath;
 
     @Id
     @GeneratedValue
     private Long id;
 
     public Entry() {
-
+        savePath="ENTRIES";
     }
 
     public Entry(String name) {
+        this();
         title = name;
     }
 
     public Entry(File entryFile) {
+        this();
         title = entryFile.getName();
 
 
@@ -54,22 +56,7 @@ public class Entry {
     }
 
     void save() {
-        File saveDir = new File(System.getProperty("user.home") + File.separator + ".captainsLog"
-                + File.separator + savePath);
-        if (!saveDir.exists()) {
-            saveDir.mkdir();
-        }
-
-        String content = getContent() + "\n";
-
-        File filename = new File(saveDir.getAbsolutePath() + File.separator + this.title);
-        try {
-            FileWriter writer = new FileWriter(filename, false);
-            writer.write(content);
-            writer.close();
-        } catch(IOException except) {
-            except.printStackTrace();
-        }
+        save("ENTRIES");
     }
 
 
@@ -91,6 +78,11 @@ public class Entry {
         } catch(IOException except) {
             except.printStackTrace();
         }
+    }
+
+    File getSaveDir() {
+        return new File(System.getProperty("user.home") + File.separator + ".captainsLog"
+                + File.separator + this.savePath);
     }
 
 }

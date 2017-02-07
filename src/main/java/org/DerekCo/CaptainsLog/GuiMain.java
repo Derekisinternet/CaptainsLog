@@ -22,14 +22,8 @@ public class GuiMain {
 
 
     public GuiMain() {
-        frame = new JFrame("Captain's Log");
-        Color bgColor = new Color(130,130,130);
-        frame.setBackground(bgColor);
-        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        frame.setSize(480, 400);
-        frame.addWindowListener(new ExitListener());
-        frame.setLayout(new FlowLayout());
 
+        initFrame();
         initToolbar();
 
         tabbedPane = new JTabbedPane();
@@ -43,6 +37,16 @@ public class GuiMain {
         tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
         frame.setVisible(true);
+    }
+
+    void initFrame() {
+        frame = new JFrame("Captain's Log");
+        Color bgColor = new Color(130,130,130);
+        frame.setBackground(bgColor);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        frame.setSize(480, 400);
+        frame.addWindowListener(new ExitListener());
+        frame.setLayout(new FlowLayout());
     }
 
     void initToolbar() {
@@ -77,7 +81,8 @@ public class GuiMain {
     private class ExitListener extends WindowAdapter {
         public void windowClosing(WindowEvent event) {
             frame.setVisible(false);
-            mainLogPanel.save("LOGS");
+            //TODO: Refactor so that all open tabs save
+            mainLogPanel.save();
             System.exit(0);
         }
     }
@@ -93,7 +98,9 @@ public class GuiMain {
 
     private class SaveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            mainLogPanel.save("LOGS");
+            // get the active tab and save it.
+            EntryPanel selected = (EntryPanel) tabbedPane.getSelectedComponent();
+            selected.save();
         }
     }
 

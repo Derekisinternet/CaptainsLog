@@ -15,6 +15,7 @@ public class MainLogPanel extends EntryPanel {
         setEntry(getTodayLog());
     }
 
+
     Log getTodayLog() {
         Log todaysLog;
         String todayString = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
@@ -28,5 +29,4 @@ public class MainLogPanel extends EntryPanel {
         return todaysLog;
     }
 
-    public Entry getEntry() { return entry;}
 }

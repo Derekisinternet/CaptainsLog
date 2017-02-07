@@ -67,9 +67,9 @@ public class EntryPanel extends JPanel {
         return textArea.getText();
     }
 
-    void save(String saveDir) {
+    void save() {
         entry.setContent(textArea.getText());
-        entry.save(saveDir);
+        entry.save();
     }
 
     void timestamp(){

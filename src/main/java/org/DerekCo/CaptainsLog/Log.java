@@ -20,37 +20,25 @@ public class Log extends Entry {
     @GeneratedValue
     private Long id;
 
+
     public Log() {
         super();
-        this.title = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
+        title = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
+        savePath = "LOGS";
+        System.out.println("Log init with savepath: " + savePath);
     }
 
     public Log(File logFile) {
         super(logFile);
     }
 
-    void save() {
-        String content = this.getContent();
-        content += "\n";
-        File saveDir = new File(System.getProperty("user.home") + File.separator + ".captainsLog"
-            + File.separator + "LOGS");
-        if (!saveDir.exists()) {
-            saveDir.mkdir();
-        }
-
-        File filename = new File(saveDir.getAbsolutePath() + File.separator + this.title);
-
-        try {
-            FileWriter writer = new FileWriter(filename, false);
-            writer.write(content);
-            writer.close();
-        } catch(IOException except) {
-            except.printStackTrace();
-        }
-    }
-
     @Override
     public String toString() {
         return "Log [id=" + id + ", title=" + title + ", contents=" + getContent() + "]";
+    }
+
+    @Override
+    void save() {
+        save("LOGS");
     }
 }
