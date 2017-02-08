@@ -87,15 +87,6 @@ public class GuiMain {
         }
     }
 
-    private class tabCloseButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            Component selected = tabbedPane.getSelectedComponent();
-            if (selected != null) {
-                tabbedPane.remove(selected);
-            }
-        }
-    }
-
     private class SaveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             // get the active tab and save it.
