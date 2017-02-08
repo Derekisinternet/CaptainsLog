@@ -76,6 +76,7 @@ public class GuiMain {
         tabbedPane.addTab(entryPanel.getTitle(), entryPanel);
         int index = tabbedPane.indexOfTab(entryPanel.getTitle());
         tabbedPane.setTabComponentAt(index, new ButtonTabComponent(tabbedPane));
+        tabbedPane.setSelectedIndex(index);
     }
 
     private class ExitListener extends WindowAdapter {
