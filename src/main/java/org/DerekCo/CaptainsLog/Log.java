@@ -25,7 +25,6 @@ public class Log extends Entry {
         super();
         title = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
         savePath = "LOGS";
-        System.out.println("Log init with savepath: " + savePath);
     }
 
     public Log(File logFile) {
