@@ -56,7 +56,7 @@ public class Entry {
     }
 
     void save() {
-        save("ENTRIES");
+        save(savePath);
     }
 
 
